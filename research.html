@@ -1,0 +1,169 @@
+<HTML>
+<BODY>
+<HEAD>  <TITLE> Alex Chen's Research Projects</TITLE>  </HEAD>
+<BODY BGCOLOR="#ffffff">
+<BODY TEXT="#000000", link="#007777", vlink="#005555">
+
+
+<table align="center", width="100%", border="0">
+<tr>
+<td align="center"> <a href="index.html">Home </a></td>
+<td align="center"> <a href="CV.pdf">CV </a></td>
+<td align="center"> <a href="research.html">Research</a></td>
+<td align="center"> <a href="teaching.html">Teaching</a></td>
+<td align="center"> <a href="personal.html">Personal </a></td></tr>
+</table>
+<BR> <BR>
+
+
+
+
+
+
+
+
+
+<table border="0", align="center", width="100%", cellspacing="40">
+<tr><td align="left">
+
+<B><FONT COLOR="#000000"> Boundary Tracking </font></B> <BR> <BR>
+Boundary tracking is an algorithm to track the boundaries of an object of interest, closely related to the problem of image segmentation (see below).  The idea is to visit only points near the boundary in question, resulting in substantial savings in computation time.   As such, boundary tracking works well for large data sets.  Boundary tracking algorithms are also ideally suited for irregularly shaped boundaries, i.e. fractal.  The boundaries of coastlines can be tracked with a high degree of accuracy, and important characteristics such as fractal dimension can be estimated efficiently.  Another application is for the segmentation of corners, often problematic for many methods requiring a length-minimization boundary term.<BR><BR>
+
+Publications: <BR><BR>
+
+<a href="ftp://ftp.math.ucla.edu/pub/camreport/cam09-02.pdf"> Image Segmentation Through Efficient Boundary Sampling</a> - In Proceedings of the 2009 Workshop on Sampling Theory and Applications, May 2009. <BR> <BR>
+
+<a href="ftp://ftp.math.ucla.edu/pub/camreport/cam10-10.pdf"> Efficient Boundary Tracking Through Sampling</a> - Preprint. <BR> <BR>
+
+
+</td>
+
+<td align="right">
+<img src="SmithIsland.png">
+</td>
+</tr></table>
+
+<table border="0", align="center", width="100%", cellspacing="40">
+<tr><td align="left">
+
+
+<B><FONT COLOR="#000000"> Atomic Force Microscopy </font></B> <BR> <BR>
+
+Atomic force microscopy is a method of imaging using a needle-cantilever system that relies on force instead of light in order to image at very high spatial resolution.  Unfortunately, the needle must move slowly across the imaging domain.  Traditionally, AFM images have been gathered using a raster scan.  Our research group (in collaboration with Paul Ashby of Lawrence Berkeley National Laboratory) is working on using boundary tracking as a method to avoid raster scans while still following features of interest.  Image inpainting is also adapted to reconstruct information at those points that the algorithm does not visit.  Other problems such as thermal drift and sample tilt are also considered, leading to a more complicated problem than for usual images.
+
+ <BR> <BR>
+
+Technical Report from Summer REU 2010 (mentored by Alex Chen, Andrea Bertozzi): <BR><BR>
+
+<a href="AFMFinalReport.pdf"> Final Report from Summer REU 2010</a>, Jef Huang and Kevin Thompson.  <BR> <BR>
+
+</td>
+
+<td align="right">
+<img src="AFM.jpg">
+</td>
+</tr></table>
+
+
+
+
+<table border="0", align="center", width="100%", cellspacing="40">
+<tr><td align="left">
+
+
+<B><FONT COLOR="#000000"> Landscape Evolution </font></B> <BR> <BR>
+
+The evolution of a landscape is affected by many different factors such as grade of slope, surrounding vegetation, wind, soil quality, etc.  Previous geological models have often added many parameters in order to measure the morphology of a landscape as accurately as possible.  These laws can be quite accurate for processes near steady state, but they cannot track evolution on a longer time scale.  We seek to reduce the number of parameters in order to examine qualitatively the formation of common features observed in nature.  The model consists of a coupled system of three PDE based on the most important factors from previous landscape evolution models as well as conservation laws.  Using these conservation laws allows for operation under longer time scales.  Evaluation of the model is based on whether the formation of features such as rivers, canyons and lakes is observed and plausible.
+
+ <BR> <BR>
+
+Presentation given at California State University, Long Beach: <BR><BR>
+
+<a href="LandscapePresentation9-10-10.pdf"> Mathematical Morphology of Landscapes</a> <BR> <BR>
+
+</td>
+
+<td align="right">
+<img src="landscape.png">
+</td>
+</tr></table>
+
+
+
+<table border="0", align="center", width="100%", cellspacing="40">
+<tr><td align="left">
+
+<B><FONT COLOR="#000000"> Image Segmentation </font></B> <BR> <BR>
+
+Computer vision is in general a difficult problem.  Humans have a lifetime of experiences to draw upon in order to determine the content of an image.  It is relatively more difficult to program an approximation of such experiences into a computer.  The problem of image segmentation, that of partitioning an image into constituent parts, has been studied from a wide variety of approaches, from statistical methods to PDE energy methods.  With large data sets, the problem can require a great deal of computation power.  One new approach is to use a hybrid method to obtain a rough estimate for boundary locations and then to use the boundary tracking method outlined above on the full data.
+
+ <BR> <BR>
+
+Poster: <BR><BR>
+
+<a href="PosterSegmentation.ppt"> Segmentation and Classification of Hyperspectral Images</a>.  Presented at Fall Internship Poster Session 2007, IPAM.
+<BR> <BR>
+
+</td>
+
+<td align="right">
+<img src="finalhybrid.png">
+</td>
+</tr></table>
+
+
+
+<table border="0", align="center", width="100%", cellspacing="40">
+<tr><td align="left">
+
+<B><FONT COLOR="#000000"> Hyperspectral Imaging </font></B> <BR> <BR>
+
+ <BR> <BR>
+
+The use of airborne imagery has many practical applications, including geological surveys, bathymetry and coastline studies, and the military.  In particular, hyperspectral imagery is a generalization of color to a large dimensional space typically (30~250) reaching from the ultraviolet range into the infrared spectrum.  As such, hyperspectral images contain much more information than standard color images.  One of the most important issues involved is processing such a large amount of data:  how can the data size be reduced in such a way so that the data can be studied easily while preserving most of the important information?  In addition, hyperspectral imaging obtains detailed spectral information at the expense of spatial resolution.  Thus, one would like to use the high spectral resolution without being handicapped by the low spatial resolution and to reconstruct the hyperspectral data at high resolution, if possible. <BR><BR>
+
+Technical Reports: <BR><BR>
+
+<a href="hyperspectral2006.pdf"> Hyperspectral Imaging</a>, 2006, with Meiching Fong, Zhong Hu.  <BR> <BR>
+
+<a href="hyperspectral2007.pdf"> Segmentation and Dimension Reduction in Hyperspectral Imaging</a>.  2007.  <BR> <BR>
+
+Poster: <BR><BR>
+
+<a href="PosterSIAM.ppt"> Hyperspectral Imaging</a>, with Meiching Fong, Zhong Hu.  Presented at SIAM Conference on Computational Science and Engineering, 2007, Costa Mesa, CA, USA.
+<BR> <BR>
+
+</td>
+
+<td align="right">
+<img src="spectralsignal.jpg">
+</td>
+</tr></table>
+
+
+
+
+<table border="0", align="center", width="100%", cellspacing="40">
+<tr><td align="left">
+
+<B><FONT COLOR="#000000"> Correlation Effects in Stock Market Volatility </font></B> <BR> <BR>
+
+Finance is a field that has been studied extensively in recent years.  One of the fundamental issues in finance are how one can use financial derivatives in order to reduce risk exposure while maintaining a healthy upside potential.  Given certain assumptions, using arbitrage arguments, valuation models for common financial instruments can be constructed.  Two of the most popular models in use today are the GARCH (discrete) and Heston (continuous PDE) models.  These models use correlation effects in stock market volatility over time in order to improve estimation of volatility and therefore of option prices.  The goal of this project is to determine whether correlating multiple stocks over an industry or related industries can improve the prediction of option prices.
+
+ <BR> <BR>
+
+Technical Report from Summer REU 2010 (mentored by Alex Chen, Todd Wittman): <BR><BR>
+
+<a href="http://www.math.ucla.edu/~bertozzi/RTG/Summer2010/StockFinalReportPDF.pdf"> Final Report from Summer REU 2010</a>, Chris Lee, Alex Livenson, Jackson Newhouse, Eshed Ohn-Bar.  <BR> <BR>
+
+</td>
+
+<td align="right">
+<img src="stocks.jpg">
+</td>
+</tr></table>
+
+<HR>
+<BR>
+</BODY>
+</HTML>
