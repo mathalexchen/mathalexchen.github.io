@@ -17,52 +17,45 @@
 
 
 
-
-
-
-
-
-
 <table border="0", align="center", width="100%", cellspacing="40">
 <tr><td align="left">
 
-<B><FONT COLOR="#000000"> Boundary Tracking </font></B> <BR> <BR>
-Boundary tracking is an algorithm to track the boundaries of an object of interest, closely related to the problem of image segmentation (see below).  The idea is to visit only points near the boundary in question, resulting in substantial savings in computation time.   As such, boundary tracking works well for large data sets.  Boundary tracking algorithms are also ideally suited for irregularly shaped boundaries, i.e. fractal.  The boundaries of coastlines can be tracked with a high degree of accuracy, and important characteristics such as fractal dimension can be estimated efficiently.  Another application is for the segmentation of corners, often problematic for many methods requiring a length-minimization boundary term.<BR><BR>
-
-Publications: <BR><BR>
-
-<a href="ftp://ftp.math.ucla.edu/pub/camreport/cam09-02.pdf"> Image Segmentation Through Efficient Boundary Sampling</a> - In Proceedings of the 2009 Workshop on Sampling Theory and Applications, May 2009. <BR> <BR>
-
-<a href="ftp://ftp.math.ucla.edu/pub/camreport/cam10-10.pdf"> Efficient Boundary Tracking Through Sampling</a> - Preprint. <BR> <BR>
-
-
-</td>
-
-<td align="right">
-<img src="SmithIsland.png">
-</td>
-</tr></table>
-
-<table border="0", align="center", width="100%", cellspacing="40">
-<tr><td align="left">
-
-
-<B><FONT COLOR="#000000"> Atomic Force Microscopy </font></B> <BR> <BR>
-
-Atomic force microscopy is a method of imaging using a needle-cantilever system that relies on force instead of light in order to image at very high spatial resolution.  Unfortunately, the needle must move slowly across the imaging domain.  Traditionally, AFM images have been gathered using a raster scan.  Our research group (in collaboration with Paul Ashby of Lawrence Berkeley National Laboratory) is working on using boundary tracking as a method to avoid raster scans while still following features of interest.  Image inpainting is also adapted to reconstruct information at those points that the algorithm does not visit.  Other problems such as thermal drift and sample tilt are also considered, leading to a more complicated problem than for usual images.
+<B><FONT COLOR="#000000"> Mucosal Immunity </font></B> <BR> <BR>
+Mucus coats all exposed organs such as the airways, intensines, and the female reproductive tracts, and these secretions play an essential role in our defense against foreign pathogens by acting as a buffer zone between invading pathogens and the underlying tissues.  Its protective role, however, has often received relatively little attention, however, because of the poor understanding of how quickly pathogens cross mucus secretions.  Our research group has introduced a model to quantify the degree of protection which can be provided by antibodies, which bind to viruses within the mucus layer, before the viruses can reach vulnerable tissue.
 
  <BR> <BR>
 
-Technical Report from Summer REU 2010 (mentored by Alex Chen, Andrea Bertozzi): <BR><BR>
+Publications: <BR><BR>
 
-<a href="AFMFinalReport.pdf"> Final Report from Summer REU 2010</a>, Jef Huang and Kevin Thompson.  <BR> <BR>
+S. McKinley, A. Chen, F. Shi, S. Wang, P. Mucha, M.G. Forest, S. Lai (2014).  Modeling neutralization kinetics of HIV-1 by broadly neutralizing monoclonal antibodies in genital secretions coating the cervicovaginal mucosa.  PLoS one, 9(6), e100598. <BR> <BR>
+A. Chen, S. McKinley, S. Wang, F. Shi, P. Mucha, M.G. Forest, S. Lai (2014).  Transient antibody-mucin interactions produce a dynamic molecular shield against viral invasion.  Biophysical Journal 106(9), 2028--2036. <BR> <BR>
+A. Chen, S. McKinley, S. Wang, F. Shi, P. Mucha, M.G. Forest, S. Lai.  Lack of virion collision in mucus limits role of sIgA-mediated immune exclusion at mucosal surfaces.  Submitted to Biophysical Journal. <BR> <BR>
+
+MATLAB GUI of Model from PLoS one paper: <a href="VirusGUI.zip">MATLAB GUI</a> 
+
+<BR><BR>
 
 </td>
 
 <td align="right">
-<img src="AFM.jpg">
+<img src="Mixed0.png">
 </td>
 </tr></table>
+
+
+
+<table border="0", align="center", width="100%", cellspacing="40">
+<tr><td align="left">
+
+Movie of virus motion simulation in the female reproductive tract: <BR> <BR>
+
+<embed src="VirusSimulation.avi" width="640" height="360" scale="aspect" controller="true">
+
+</td>
+
+</tr></table>
+
+
 
 
 
@@ -77,9 +70,11 @@ The evolution of a landscape is affected by many different factors such as grade
 
  <BR> <BR>
 
-Presentation given at California State University, Long Beach: <BR><BR>
+Publications:  <BR> <BR>
 
-<a href="LandscapePresentation9-10-10.pdf"> Mathematical Morphology of Landscapes</a> <BR> <BR>
+A. Chen, J. Darbon, G. Buttazzo, F. Santambrogio, J.-M. Morel (2014).  On the equations of landscape formation. Interfaces and Free Boundaries 16, 105--136. <BR> <BR>
+A. Chen, J. Darbon, J.-M. Morel (2014).  Landscape evolution models: a review of their fundamental equations. Geomorphology, 219, 68--86. <BR> <BR>
+A. Chen, J. Darbon, C. de Franchis, G. Facciolo, E. Meinhardt, J. Michel, J.-M. Morel.  Numerical simulation of landscape evolution and water run-off on digital elevation models obtained from Pleiades.  Submitted to Revue Francaise de Photogrammetrie. <BR> <BR>
 
 </td>
 
@@ -87,6 +82,69 @@ Presentation given at California State University, Long Beach: <BR><BR>
 <img src="landscape.png">
 </td>
 </tr></table>
+
+
+
+
+
+<table border="0", align="center", width="100%", cellspacing="40">
+<tr><td align="left">
+
+Movies of our landscape evolution model on the islands of La Reunion and Madeira: <BR> <BR>
+
+<embed src="LaReunion.avi" width="663" height="364" scale="aspect" controller="true">
+<embed src="Madeira.avi" width="287" height="525" scale="aspect" controller="true">
+
+</td>
+
+</tr></table>
+
+
+
+
+<table border="0", align="center", width="100%", cellspacing="40">
+<tr><td align="left">
+
+<B><FONT COLOR="#000000"> Boundary Tracking </font></B> <BR> <BR>
+Boundary tracking is an algorithm to track the boundaries of an object of interest, closely related to the problem of image segmentation (see below).  The idea is to visit only points near the boundary in question, resulting in substantial savings in computation time.   As such, boundary tracking works well for large data sets.  Boundary tracking algorithms are also ideally suited for irregularly shaped boundaries, i.e. fractal.  The boundaries of coastlines can be tracked with a high degree of accuracy, and important characteristics such as fractal dimension can be estimated efficiently.  Another application is for the segmentation of corners, often problematic for many methods requiring a length-minimization boundary term.<BR><BR>
+
+Publications: <BR><BR>
+
+A. Chen, T. Wittman, A. Tartakovsky, and A. Bertozzi. Image segmentation through efficient boundary sampling (2009). <a href="ftp://ftp.math.ucla.edu/pub/camreport/cam09-02.pdf">pdf</a> <BR> <BR>
+A. Chen, T. Wittman, A. Tartakovsky, and A. Bertozzi (2011). Efficient Boundary Tracking Through Sampling. Applied Mathematics Research eXpress, 2011(2), 182--214.  <a href="boundarytrackingamrxfinal.pdf">pdf</a> <BR> <BR>
+A. Chen. Improved Boundary Tracking by Off-Boundary Detection (2012). Proceedings of SPIE Remote Sensing. <a href="Hyperspectral_Boundary_Tracking.pdf">pdf</a> <BR> <BR>
+
+<BR> <BR>
+
+</td>
+
+<td align="right">
+<img src="SmithIsland.png">
+</td>
+</tr></table>
+
+<table border="0", align="center", width="100%", cellspacing="40">
+<tr><td align="left">
+
+
+<B><FONT COLOR="#000000"> Atomic Force Microscopy </font></B> <BR> <BR>
+
+Atomic force microscopy (AFM) is a method of imaging using a needle-cantilever system that relies on force instead of light in order to image at very high spatial resolution.  Unfortunately, the needle must move slowly across the imaging domain.  Traditionally, AFM images have been gathered using a raster scan.  Our research group (in collaboration with Paul Ashby of Lawrence Berkeley National Laboratory) is working on using boundary tracking as a method to avoid raster scans while still following features of interest.  Image inpainting is also adapted to reconstruct information at those points that the algorithm does not visit.  Other problems such as thermal drift and sample tilt are also considered, leading to a more complicated problem than for usual images.
+
+ <BR> <BR>
+
+Publications: <BR> <BR>
+
+A. Chen, A. L. Bertozzi, P. D. Ashby, P. Getreuer, and Y. Lou (2013). Enhancement and Recovery in Atomic Force Microscopy Images. Excursions in Harmonic Analysis, Volume 2, Andrews, T.D.; Balan, R.; Benedetto, J.J.; Czaja, W.; Okoudjou, K.A. (Eds.), Birkhauser Basel, 311-332. <a href="AFM11.pdf">pdf</a> <BR> <BR>
+T. Meyer, D. Ziegler, C. Brune, A. Chen, R. Farnham, N. Huynh, J.-M. Chang, A. Bertozzi, P. Ashby (2014).  Height drift correction in non-raster atomic force microscopy. Ultramicroscopy 137, 48-54. <a href="drift-AFM-2013.pdf">pdf</a> <BR> <BR>
+
+</td>
+
+<td align="right">
+<img src="AFM.jpg">
+</td>
+</tr></table>
+
 
 
 
@@ -99,10 +157,10 @@ Computer vision is in general a difficult problem.  Humans have a lifetime of ex
 
  <BR> <BR>
 
-Poster: <BR><BR>
+Publication: <BR><BR>
 
-<a href="PosterSegmentation.ppt"> Segmentation and Classification of Hyperspectral Images</a>.  Presented at Fall Internship Poster Session 2007, IPAM.
-<BR> <BR>
+A. Chen. Active Contours with Edges:  Combining Hyperspectral and Grayscale Segmentation (2012). Proceedings of SPIE Remote Sensing. <a href="Hyperspectral_Segmentation.pdf">pdf</a> <BR> <BR>
+
 
 </td>
 
@@ -122,44 +180,14 @@ Poster: <BR><BR>
 
 The use of airborne imagery has many practical applications, including geological surveys, bathymetry and coastline studies, and the military.  In particular, hyperspectral imagery is a generalization of color to a large dimensional space typically (30~250) reaching from the ultraviolet range into the infrared spectrum.  As such, hyperspectral images contain much more information than standard color images.  One of the most important issues involved is processing such a large amount of data:  how can the data size be reduced in such a way so that the data can be studied easily while preserving most of the important information?  In addition, hyperspectral imaging obtains detailed spectral information at the expense of spatial resolution.  Thus, one would like to use the high spectral resolution without being handicapped by the low spatial resolution and to reconstruct the hyperspectral data at high resolution, if possible. <BR><BR>
 
-Technical Reports: <BR><BR>
+Publication: <BR><BR>
 
-<a href="hyperspectral2006.pdf"> Hyperspectral Imaging</a>, 2006, with Meiching Fong, Zhong Hu.  <BR> <BR>
-
-<a href="hyperspectral2007.pdf"> Segmentation and Dimension Reduction in Hyperspectral Imaging</a>.  2007.  <BR> <BR>
-
-Poster: <BR><BR>
-
-<a href="PosterSIAM.ppt"> Hyperspectral Imaging</a>, with Meiching Fong, Zhong Hu.  Presented at SIAM Conference on Computational Science and Engineering, 2007, Costa Mesa, CA, USA.
-<BR> <BR>
+A. Chen. The Inpainting of Hyperspectral Images:  A Survey and Adaptation to Hyperspectral Data (2012). Proceedings of SPIE Remote Sensing. <a href="Hyperspectral_Inpainting.pdf">pdf</a> <BR> <BR>
 
 </td>
 
 <td align="right">
 <img src="spectralsignal.jpg">
-</td>
-</tr></table>
-
-
-
-
-<table border="0", align="center", width="100%", cellspacing="40">
-<tr><td align="left">
-
-<B><FONT COLOR="#000000"> Correlation Effects in Stock Market Volatility </font></B> <BR> <BR>
-
-Finance is a field that has been studied extensively in recent years.  One of the fundamental issues in finance are how one can use financial derivatives in order to reduce risk exposure while maintaining a healthy upside potential.  Given certain assumptions, using arbitrage arguments, valuation models for common financial instruments can be constructed.  Two of the most popular models in use today are the GARCH (discrete) and Heston (continuous PDE) models.  These models use correlation effects in stock market volatility over time in order to improve estimation of volatility and therefore of option prices.  The goal of this project is to determine whether correlating multiple stocks over an industry or related industries can improve the prediction of option prices.
-
- <BR> <BR>
-
-Technical Report from Summer REU 2010 (mentored by Alex Chen, Todd Wittman): <BR><BR>
-
-<a href="http://www.math.ucla.edu/~bertozzi/RTG/Summer2010/StockFinalReportPDF.pdf"> Final Report from Summer REU 2010</a>, Chris Lee, Alex Livenson, Jackson Newhouse, Eshed Ohn-Bar.  <BR> <BR>
-
-</td>
-
-<td align="right">
-<img src="stocks.jpg">
 </td>
 </tr></table>
 
